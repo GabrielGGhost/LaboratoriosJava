@@ -3,20 +3,18 @@ package laboratorio4___6_6;
 class ControleFluxoWhileOpcional {
 
   public static void main(String[] args) {
-	int limiteInferior = 100;
-	int limiteSuperior = 200;
-
-	for (; limiteInferior <= limiteSuperior; limiteInferior++) {
+	int limiteInferior = 14;
+	int limiteSuperior = 1578;
+	int numerosDiv6 = 0;
+	
+	while(limiteInferior <= limiteSuperior) {
 		
-		if(limiteInferior % 2 == 0 && limiteInferior % 3 == 0) {
-			
-			System.out.println("O número " + limiteInferior + " é divisível por 2 e por 3, portanto é divisível por 6");
-		} else if(limiteInferior % 2 == 0) {
-			
-			System.out.println("O número " + limiteInferior + " é divisivel por 2");
-		} else {
-			System.out.println("O número " + limiteInferior + " é divisivel por 3");
-		}
+		if(limiteInferior % 6 == 0) numerosDiv6++;
+		limiteInferior++;
 	}
+	
+	String texto = "Quantidade de numeros divisiveis por 6 entre ";
+	System.out.println(texto + limiteInferior + " e " + limiteSuperior
+	    + " e : " + numerosDiv6);
   }
 }
