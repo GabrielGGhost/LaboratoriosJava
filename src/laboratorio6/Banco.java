@@ -1,4 +1,4 @@
-package laboratorios6;
+package laboratorio6;
 
 public class Banco {
 	String nome;
