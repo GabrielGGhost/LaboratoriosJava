@@ -8,32 +8,22 @@ public class TesteClasses {
 		Cliente cliente = new Cliente();
 		Conta conta = new Conta();
 		
-		banco.nome = "Nubank";
-		banco.numero = 256;
+		banco.inicializarBanco("Nubank", 0001);
 		
-		agencia.banco = banco;
-		agencia.nome = "Agencia nomezinho";
-		agencia.numero = 0125;
+		agencia.inicializarAgencia(0125, "Agencia nomezinho", banco);
 		
-		cliente.nome = "Gabriel Artioli";
-		cliente.cpf = "4795624871";
-		
-		conta.numero = 1254789;
-		conta.saldo = 100;
-		conta.agencia = agencia;
-		conta.cliente = cliente;
-		
-		System.out.println("Dados: ");
-		conta.cliente.imprimir();
-		conta.imprimir();
-		conta.agencia.imprimir();
-		conta.agencia.banco.imprimir();
-		System.out.println();
+		cliente.inicializarCliente("Gabriel Artioli", "478569523-00");
+
+		conta.inicializarConta(100, 1452365, agencia, cliente);
 		
 		conta.saque(500);
 		conta.deposito(500);
 		conta.saque(500);
 		conta.deposito(-200);
+		
+		conta.imprimir();
+		
+
 	}
 
 }

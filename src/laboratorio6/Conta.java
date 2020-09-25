@@ -7,9 +7,20 @@ public class Conta {
 	Agencia agencia;
 	Cliente cliente;
 	
+	void inicializarConta(double saldo, int numero, Agencia agencia, Cliente cliente) {
+		this.saldo = saldo;
+		this.numero = numero;
+		this.agencia = agencia;
+		this.cliente = cliente;
+	}
+	
 	void imprimir() {
-		System.out.println("Saldo da conta: " + saldo);
-		System.out.println("Número da conta: " + numero);
+		System.out.println();
+		System.out.println("Dados: ");
+		this.cliente.imprimir();
+		this.agencia.imprimir();
+		this.agencia.banco.imprimir();
+		System.out.println();
 	}
 	
 	void saque(double valor) {
