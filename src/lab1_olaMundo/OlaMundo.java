@@ -1,4 +1,4 @@
-package laboratorio1___3_5;
+package lab1_olaMundo;
 
 public class OlaMundo {
 
