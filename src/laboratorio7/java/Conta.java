@@ -67,5 +67,14 @@ class Conta {
 		this.setAgencia(agencia);
 	}
 	
+	void imprimir() {
+    	System.out.println("-----------------------------");
+    	System.out.println("AGENCIA: " + this.getAgencia().getNumero() + '\t' + "BANCO: " + this.getAgencia().getBanco());
+    	System.out.println("NUMERO: " + this.getNumero());
+    	System.out.println("TITULAR: " + this.getTitular());
+    	System.out.println("SALDO: " + this.getSaldo());
+    	System.out.println("-----------------------------");
+	}
+	
 	
 }

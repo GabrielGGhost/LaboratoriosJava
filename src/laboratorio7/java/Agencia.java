@@ -26,4 +26,17 @@ class Agencia {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
+	
+	void inicializarAgencia(int numero, int banco) {
+		this.setNumero(numero);
+		this.setBanco(banco);
+	}
+	
+	void imprimir() {
+		
+    	System.out.println("-------------------------------");
+    	System.out.println("AGENCIA: " + this.getNumero() + '\t' + "BANCO: " + this.getBanco());
+    	System.out.println("-------------------------------");   
+    	
+	}
 }

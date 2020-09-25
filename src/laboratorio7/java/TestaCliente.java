@@ -26,11 +26,8 @@ class TestaCliente {
     	
     	Cliente cliente = new Cliente();
     	
-    	cliente.setNome("Gabriel Artioli");
-    	cliente.setCpf("45896587400");
+    	cliente.inicializarCliente("Gabriel Artioli", "478569325-10");
     	
-    	System.out.println("--------------------------------------------------");
-    	System.out.println("Nome: " + cliente.getNome() + "\t" + "CPF: " + cliente.getCpf());
-    	System.out.println("--------------------------------------------------");
+    	cliente.imprimir();
     }
 }

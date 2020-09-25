@@ -27,4 +27,15 @@ class Cliente {
 		this.cpf = cpf;
 	}
 	
+	void inicializarCliente(String nome, String cpf) {
+		this.setNome(nome);
+		this.setCpf(cpf);
+	}
+	
+	void imprimir() {
+    	System.out.println("--------------------------------------------------");
+    	System.out.println("Nome: " + this.getNome() + "\t" + "CPF: " + this.getCpf());
+    	System.out.println("--------------------------------------------------");
+	}
+	
 }

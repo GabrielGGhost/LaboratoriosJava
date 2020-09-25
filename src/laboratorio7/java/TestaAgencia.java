@@ -28,10 +28,8 @@ class TestaAgencia {
     	
     	Agencia agencia = new Agencia();
     	
-    	agencia.setBanco(2563);
-    	agencia.setNumero(122);
+    	agencia.inicializarAgencia(1236, 0005);
     	
-    	System.out.println("-------------------------------");
-    	System.out.println("AGENCIA: " + agencia.getNumero() + '\t' + "BANCO: " + agencia.getBanco());
-    	System.out.println("-------------------------------");    }
+    	agencia.imprimir();
+    }
 }

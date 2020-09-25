@@ -30,19 +30,10 @@ class TestaConta {
     	Conta conta = new Conta();
     	Agencia agencia = new Agencia();
     	
-    	agencia.setBanco(0001);
-    	agencia.setNumero(3012);
+    	agencia.inicializarAgencia(0001, 3012);
     	
-    	conta.setAgencia(agencia);
-    	conta.setNumero(1458745);
-    	conta.setSaldo(200);
-    	conta.setTitular("Gabriel Artioli");
+    	conta.inicializarConta(200, 1451254, "Gabriel Artioli", agencia);
     	
-    	System.out.println("-----------------------------");
-    	System.out.println("AGENCIA: " + conta.getAgencia().getNumero() + '\t' + "BANCO: " + conta.getAgencia().getBanco());
-    	System.out.println("NUMERO: " + conta.getNumero());
-    	System.out.println("TITULAR: " + conta.getTitular());
-    	System.out.println("SALDO: " + conta.getSaldo());
-    	System.out.println("-----------------------------");
+    	conta.imprimir();
     }
 }
