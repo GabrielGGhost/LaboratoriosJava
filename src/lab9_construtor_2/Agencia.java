@@ -1,31 +1,36 @@
-package lab9_construtor;
-
+package lab9_construtor_2;
+/*
+ * 
+ * Globalcode - "The Developers Company"
+ * 
+ * Academia do Java
+ * 
+ * Nao e necessario fazer nenhuma alteracao nesta classe
+ */
 public class Agencia {
 
-    private int numero;
-    private Banco banco;
+    private String numero;
+    private int banco;
 
-
-    public Agencia(int numero, Banco banco) {
+    public Agencia(String numero, int banco) {
         this.setNumero(numero);
         this.setBanco(banco);
     }
 
-    public Banco getBanco() {
+    public int getBanco() {
         return this.banco;
     }
 
-
-    public int getNumero() {
+    public String getNumero() {
         return this.numero;
     }
 
-    public void setBanco(Banco banco) {
-        this.banco = banco;
+    public void setBanco(int b) {
+        this.banco = b;
     }
 
-    public void setNumero(int num) {
-        numero = num;
+    public void setNumero(String num) {
+        this.numero = num;
     }
 
     public void imprimeDados() {
