@@ -36,10 +36,6 @@ public class ContaEspecial extends Conta{
         if (valor > 0) {
             if (this.getSaldo() + this.getLimite() >= valor) {
                 this.setSaldo(this.getSaldo() - valor);
-                if(this.getSaldo() < 0) {
-                	this.setLimite(this.getLimite() - Math.abs(this.getSaldo()));
-                	this.setSaldo(0);
-                }
                 super.acumularIFN(valor);
             } else
                 System.out.println("Saldo insuficiente");
