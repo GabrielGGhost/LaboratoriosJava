@@ -1,4 +1,4 @@
-package lab7_metodos;
+package lab7_metodos_1;
 
 /*
  * Globalcode - "The Developers Company"
