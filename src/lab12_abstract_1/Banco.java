@@ -1,4 +1,4 @@
-package lab12_abstract;
+package lab12_abstract_1;
 
 public class Banco {
 

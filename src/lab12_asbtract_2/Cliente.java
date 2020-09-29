@@ -1,4 +1,4 @@
-package lab12_abstract;
+package lab12_asbtract_2;
 /*
  * Globalcode - "The Developers Company"
  * 
@@ -9,7 +9,6 @@ public class Cliente {
 
     private String nome;
     private String cpf;
-
 
     public Cliente(String nome, String cpf) {
         this.setCpf(cpf);
@@ -28,11 +27,9 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-
     public void setNome(String nome) {
         this.nome = nome;
     }
-
 
     public void imprimeDados() {
         System.out.println("----------------------");
