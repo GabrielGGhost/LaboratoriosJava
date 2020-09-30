@@ -1,4 +1,4 @@
-package labAdicional_1_heranca;
+package labs10_heranca_2;
 
 public class Banco {
 
