@@ -39,7 +39,7 @@ public class FormataDatas {
 				+ formatador.format(new Date()));
 
 		// f) Construcao do objeto para formatacao padrao
-		DateFormat formatador2 = DateFormat.getDateInstance();
+		DateFormat formatador2 = DateFormat.getDateInstance(DateFormat.MEDIUM);
 		System.out.println("data formatada com DateFormat: "
 				+ formatador2.format(data));
 		System.out.println("data atual formatada com DateFormat: "
